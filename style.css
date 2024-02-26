@@ -38,8 +38,8 @@ button {
     margin: 20px 0 0;
     font-weight: 500;
 }
-.location {
-    margin-top: 20px;
+.ipaddress, .location {
+    margin-top: 25px;
 }
 
 .show{    
@@ -51,7 +51,7 @@ button {
 }
 
 
-#display-info, #location {
+#display-info, #location, #ipaddress {
     width: 200px;
     border-radius: 5px;
     overflow: hidden;
