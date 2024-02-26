@@ -21,6 +21,10 @@ function getLocation() {
         navigator.geolocation.getCurrentPosition(showPosition, showError)        
         locationDetails.classList.add('show')    
     }
+    else {
+        locationDetails.textContent = `Geo location is not supported by the browser.`
+        locationDetails.classList.add('show')
+    }
 
 }
 
@@ -31,7 +35,6 @@ function showPosition (position) {
 }
 
 function showError (error) {
-    console.log(error)
     if(error.code === error.PERMISSION_DENIED) {
         locationDetails.textContent = `"User denied the request for location."`
     }
