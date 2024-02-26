@@ -9,7 +9,7 @@ displayInfoBtn.addEventListener('click', getDisplayInfo)
 
 function getDisplayInfo() {
     const display = window.screen
-    displayInfo.textContent = `Screen Width : ${display.width}px, Screen Height: ${display.height}px`
+    displayInfo.textContent = `Screen Width : ${display.width}px Screen Height: ${display.height}px`
     displayInfo.classList.add('show')                        
 }
 
